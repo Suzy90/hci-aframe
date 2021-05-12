@@ -12,13 +12,13 @@ console.log(myOtherBox.object3D.rotation.x);
 setInterval(spin, 16); //equivalent to 60 fps
 
 function bigBox(x) {
-  x.style.height = "3";
-  x.style.width = "9";
-   x.style.depth = "3";
+  x.style.height = "3px";
+  x.style.width = "9px";
+  
 }
 
 function normalBox(x) {
-  x.style.height = "1";
-  x.style.width = "3";
-  x.style.depth = "1";
+  x.style.height = "1px";
+  x.style.width = "3px";
+
 }
