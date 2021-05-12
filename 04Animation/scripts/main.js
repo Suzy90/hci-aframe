@@ -11,14 +11,12 @@ console.log(myOtherBox.object3D.rotation.x);
 
 setInterval(spin, 16); //equivalent to 60 fps
 
-function bigBox(x) {
-  x.style.height = "3px";
-  x.style.width = "9px";
-  
+document.getElementById("demo").addEventListener("mouseenter", mouseEnter);
+document.getElementById("demo").addEventListener("mouseleave", mouseLeave);
+
+function mouseEnter() {
+  document.getElementById("demo").style.color = "metal";
 }
 
-function normalBox(x) {
-  x.style.height = "1px";
-  x.style.width = "3px";
-
-}
+function mouseLeave() {
+  document.getElementById("demo").style.color = "wood";
